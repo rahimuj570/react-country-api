@@ -1,4 +1,5 @@
 import React from "react";
+import ModalReact from "../Modal/ModalReact";
 
 const Country = ({ data }) => {
   return (
@@ -10,7 +11,7 @@ const Country = ({ data }) => {
           alt={data.name.common}
         />
         <h3>{data.name.common}</h3>
-        <button className="btn bg-primary text-white py-1 px-2">Details</button>
+        <ModalReact data={data}></ModalReact>
       </div>
     </div>
   );
